@@ -12,7 +12,7 @@ class WSEndpoint(WebSocketEndpoint):
 
     async def on_receive(self, websocket, data):
         try:
-            decoded, func = WAPI.decode_incoming(data)
+            decoded, func = FastWAPI.decode_incoming(data)
         except:
             await websocket.send_json({"error":"invalid JSON"})
             return -1
@@ -28,10 +28,10 @@ class FastWAPI(Starlette):
 
 
     def decode_incoming(data: dict):
-        for model in WAPI.mapping_class:
+        for model in FastWAPI.mapping_class:
             try:
                 decoded = model(**data)
-                return decoded, WAPI.mapping_class[model]
+                return decoded, FastWAPI.mapping_class[model]
             except:
                 print("error")
 
