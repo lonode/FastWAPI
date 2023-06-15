@@ -65,3 +65,8 @@ Either through command line "uvicorn main:app" or directly inside the python fil
 if __name__ == "__main__":
     uvicorn.run("main:app", port=5000, log_level="info")
 ```
+
+To test your app, you need a websocket client. You can use Postman, or [wscat](https://github.com/websockets/wscat) :
+
+![wscat demo](https://github.com/lonode/FastWAPI/assets/32384862/ebc1f354-b673-48e7-b85e-881a343e35a2)
+
