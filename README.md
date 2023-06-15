@@ -4,10 +4,11 @@ FastWAPI is a simple lightweight Websocket framework based on Starlette, which p
 
 It's in the same spirit as _FastAPI_, where each decorator map to an HTTP path. But here, each decorator map to a Pydantic object, and each object map to a function. 
 
+# Installation
 
+`pip install fastwapi`
 # Disclaimer
 
- - The project is not yet available on pip due to a name conflict with a previous wapi project.
  - The module is available, but far from finished & polished, please do not use it in production.
 
 # Roadmap 
