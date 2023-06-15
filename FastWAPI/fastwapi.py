@@ -22,7 +22,7 @@ class WSEndpoint(WebSocketEndpoint):
     async def on_disconnect(self, websocket, close_code):
         pass
 
-class WAPI(Starlette):
+class FastWAPI(Starlette):
 
     mapping_class = {}
 

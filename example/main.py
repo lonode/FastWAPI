@@ -1,8 +1,8 @@
 import uvicorn
-from ..WAPI.wapi import WAPI, WebSocket
+from fastwapi import FastWAPI, WebSocket
 from pydantic import BaseModel
 
-app = WAPI(endpoint="/ws")
+app = FastWAPI(endpoint="/ws")
 
 class CM(BaseModel):
     counter: int

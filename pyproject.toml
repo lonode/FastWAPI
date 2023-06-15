@@ -5,8 +5,8 @@ requires      = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "wapi"
-version = "0.5"
+name = "FastWAPI"
+version = "0.1.0"
 description = "A simple API Websocket server to easily parse JSON"
 readme = "README.md"
 authors = [{ name = "lonode", email = "lonode-git@proton.me" }]
@@ -23,9 +23,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development",
     "Typing :: Typed",
-    "Development Status :: 1 - Beta",
     "Environment :: Web Environment",
-    "Framework :: WAPI",
     "Framework :: Pydantic",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
