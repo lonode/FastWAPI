@@ -1,8 +1,9 @@
 # Description
 
-A simple lightweight Websocket framework based on Starlette, which provide easy-to-use Python decorator to parse JSON incoming message.  
+FastWAPI is a simple lightweight Websocket framework based on Starlette, which provide easy-to-use Python decorator to parse JSON incoming message.  
 
-It's in the same spirit as FastAPI, where each decorator map to a path. But here, each decorator map to a Pydantic object, so it is easy to map each incoming JSON message to a function. 
+It's in the same spirit as _FastAPI_, where each decorator map to an HTTP path. But here, each decorator map to a Pydantic object, and each object map to a function. 
+
 
 # Disclaimer
 
@@ -24,10 +25,10 @@ Getting started in three steps :
 
 ```python
 import uvicorn
-from wapi import WAPI, WebSocket
+from fastwapi import FastWAPI, WebSocket
 from pydantic import BaseModel
 
-app = WAPI(endpoint="/ws")
+app = FastWAPI(endpoint="/ws")
 
 ```
 
