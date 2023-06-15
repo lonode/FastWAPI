@@ -5,8 +5,8 @@ requires      = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "FastWAPI"
-version = "0.1.0"
+name = "fastwapi"
+version = "0.1.2"
 description = "A simple API Websocket server to easily parse JSON"
 readme = "README.md"
 authors = [{ name = "lonode", email = "lonode-git@proton.me" }]
@@ -43,4 +43,4 @@ dependencies = [
 requires-python = ">=3.7"
 
 [project.urls]
-Homepage = "https://github.com/lonode/wapi"
+Homepage = "https://github.com/lonode/FastWAPI"
